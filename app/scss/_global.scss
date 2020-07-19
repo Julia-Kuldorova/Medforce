@@ -14,12 +14,7 @@ a {
   outline: transparent;
 }
 
-ul,
-li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
+
 
 html,
 body {
@@ -29,10 +24,24 @@ body {
 body{
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  line-height: 28px;
   font-weight: 400;
   color: $text;
   background-color: $bg;
 }
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3{
+  margin: 0;
+  font-weight: 400;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1140px;
@@ -53,5 +62,171 @@ body{
   flex: 0 0 auto;
 }
 
+.logo{
+  width: 170px;
+  height: 24px;
+}
 
+.social__links{
+  li{
+    display: inline-block;
+    a{
+      span {
+        transition: .3s;
+        color: $text;
+      }
+      &:hover{
+        span {
+          color: $wave;
+        }
+      }
+    }
+  }
+  li+li{
+    margin-left: 20px;
+  }
+}
 
+.btn{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fefefe;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 11px 30px;
+  border-radius: 40px;
+  text-align: center;
+  min-width: 150px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient( 90deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient( 90deg, transparent , rgba(255, 255, 255, 0.6), transparent);
+    transition: .4s;
+  }
+  &:hover{
+    &::before{
+      left: 100%;
+    }
+  }
+}
+.btn__wrapper{
+  max-height: 50px;
+}
+
+.background-animate{
+  position: absolute;
+  z-index: -2;
+}
+.light-animate__yellow{
+  animation: 10s light-1 infinite linear;
+}
+.light-animate__blue{
+  animation: 5s light-2 infinite linear;
+}
+.light-animate__blue-thin{
+  animation: 15s light-3 infinite linear;
+}
+.light-animate__red{
+  animation: 12s light-2 infinite linear;
+}
+@keyframes light-1 {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform:  translateY(100px) translateX(-150px);
+  }
+}
+@keyframes light-2 {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(150px) translateX(-200px);
+  }
+}
+@keyframes light-3 {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(50px) translateX(-50px);
+  }
+}
+@keyframes light-4 {
+  0%{
+    opacity: 0;
+  }
+  20%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: translateY(25px) translateX(-25px);
+  }
+}
+.search-form__type-1{
+  min-width: 350px;
+  position: relative;
+  input{
+    background-color: #3639a6;
+    padding: 0 60px 0 30px;
+    border: 1px solid #3462c2;
+    border-radius: 40px;
+    transition: .3s;
+    height: 50px;
+    max-width: 350px;
+    width: 100%;
+    color: $text;
+    &::placeholder{
+      color: #95a3fb;
+    }
+    &:focus{
+      border: 1px solid $wave;
+      outline: transparent;
+    }
+  }
+  button{
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 15px;
+    background-color: transparent;
+    outline: transparent;
+    border: none;
+  }
+}
