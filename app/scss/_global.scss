@@ -139,6 +139,15 @@ h1, h2, h3{
 .light-animate__red{
   animation: 12s light-2 infinite linear;
 }
+
+.light-animate__blue-thick{
+  animation: 8s light-3 infinite linear;
+}
+
+.light-animate__blue-long{
+  animation: 12s light-4 infinite linear;
+}
+
 @keyframes light-1 {
   0%{
     opacity: 0;
@@ -154,6 +163,7 @@ h1, h2, h3{
     transform:  translateY(100px) translateX(-150px);
   }
 }
+
 @keyframes light-2 {
   0%{
     opacity: 0;
@@ -169,6 +179,7 @@ h1, h2, h3{
     transform: translateY(150px) translateX(-200px);
   }
 }
+
 @keyframes light-3 {
   0%{
     opacity: 0;
@@ -199,6 +210,7 @@ h1, h2, h3{
     transform: translateY(25px) translateX(-25px);
   }
 }
+
 .search-form__type-1{
   min-width: 350px;
   position: relative;
