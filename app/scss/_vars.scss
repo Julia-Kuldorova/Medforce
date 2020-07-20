@@ -7,8 +7,10 @@ $textDark: #abb4ca;
 $text: #f3f2fd;
 $textPurple: #dde3ff;
 
-@mixin first {
-
+@mixin background {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 @mixin second {
 

@@ -242,3 +242,27 @@ h1, h2, h3{
     border: none;
   }
 }
+
+.headline{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  margin-bottom: 50px;
+  .headline__text-top{
+    display: block;
+    font-size: 24px;
+    color: $wave;
+    margin-bottom: 15px;
+  }
+  .headline__title{
+    color: #fff;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 25px;
+  }
+  .headline__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
