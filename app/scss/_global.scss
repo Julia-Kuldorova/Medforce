@@ -164,6 +164,7 @@ h1, h2, h3{
   }
 }
 
+
 @keyframes light-2 {
   0%{
     opacity: 0;
@@ -264,5 +265,26 @@ h1, h2, h3{
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
+  }
+}
+
+
+.link-arrow{
+  color: $textPurple;
+  transition: .3s all;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  svg{
+    margin-left: 5px;
+  }
+  path{
+    transition: .3s all;
+  }
+  &:hover{
+    color: $wave;
+    path{
+      fill: $wave;
+    }
   }
 }
