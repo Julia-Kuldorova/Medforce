@@ -17,6 +17,12 @@ $(function(){
         nextArrow:
             '<button class="slick-arrow slick-next"><img src="../images/icons/arrow-next.png" alt=""></button>',
         variableWidth: true
-        // centerMode: true,
+    });
+
+    $(".rate-star").rateYo({
+        rating: 5,
+        starWidth: "16px",
+        readOnly: true,
+        ratedFill: "#ffcc00"
     });
 });

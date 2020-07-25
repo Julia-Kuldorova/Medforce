@@ -265,11 +265,7 @@
   &.browse-games{
     max-width: 200px;
     width: 100%;
-    background: transparent;
-    border: 1px solid #394670;
-    box-shadow: none;
   }
-
 }
 .content-top__play{
   display: flex;
@@ -675,18 +671,6 @@
   }
 }
 
-.play-slider__bottom-link{
-  border: 1px solid #554d96;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  svg{
-    height: 7px;
-    width: 14px;
-    margin-bottom: 3px;
-  }
-}
 
 .play-slider__bottom-user{
 
@@ -1191,5 +1175,122 @@
 
 
 // join end
+
+
+// games  start
+
+.games{
+  background-color: $bgLight;
+}
+
+.games__inner{
+  padding: 110px 0 120px;
+}
+
+.games-headline{
+  max-width: 650px;
+  margin: 0 auto 50px;
+}
+
+.game__item-inner{
+  padding: 25px 20px;
+  border-bottom: 1px solid #2b2b6e;
+
+}
+
+.games__box-row{
+  display: flex;
+  margin: 0 -15px;
+}
+
+.game__item{
+  background-color: $bgItem;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0px 5px 10px 0px rgba(13, 13, 48, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 30px;
+  position: relative;
+  &.game__item-hot{
+    &::before{
+      content: ' hot';
+      text-transform: uppercase;
+      font-size: 12px;
+      color: #fff;
+      background: #ed4455;
+      position: absolute;
+      top: 30px;
+      padding: 4px 13px 4px 12px;
+      line-height: 12px;
+      border-radius: 0px 5px 5px 0px;
+      font-weight: 600;
+    }
+  }
+}
+
+
+.game__item-info{
+  display: flex;
+  align-items: center;
+}
+
+
+.game__img{
+  a{
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: 218px;
+    @include background;
+  }
+}
+
+.game__title{
+  margin-bottom: 3px;
+  a{
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+
+.game__version{
+  margin-right: 35px;
+  position: relative;
+  &::after{
+    content: '|';
+    color: #d6dbfb;
+    position: absolute;
+    right: -24px;
+  }
+}
+
+.game__item-bottom{
+  padding: 30px 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game__item-players{
+  span{
+    color: $wave;
+    padding-right: 4px;
+    font-weight: 700;
+  }
+}
+
+.games__box-link{
+  text-align: center;
+  margin-top: 30px;
+}
+
+// games end
 
 @import '_media';
