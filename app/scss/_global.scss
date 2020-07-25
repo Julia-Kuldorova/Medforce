@@ -15,13 +15,12 @@ a {
 }
 
 
-
 html,
 body {
   height: 100%;
 }
 
-body{
+body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 28px;
@@ -37,7 +36,7 @@ li {
   list-style: none;
 }
 
-h1, h2, h3{
+h1, h2, h3 {
   margin: 0;
   font-weight: 400;
 }
@@ -62,32 +61,35 @@ h1, h2, h3{
   flex: 0 0 auto;
 }
 
-.logo{
+.logo {
   width: 170px;
   height: 24px;
 }
 
-.social__links{
-  li{
+.social__links {
+  li {
     display: inline-block;
-    a{
+
+    a {
       span {
         transition: .3s;
         color: $text;
       }
-      &:hover{
+
+      &:hover {
         span {
           color: $wave;
         }
       }
     }
   }
-  li+li{
+
+  li + li {
     margin-left: 20px;
   }
 }
 
-.btn{
+.btn {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
@@ -100,127 +102,137 @@ h1, h2, h3{
   min-width: 150px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient( 90deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+  background: linear-gradient(90deg, rgb(193, 101, 221) 0%, rgb(92, 39, 254) 100%);
   box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
-  &.btn-transparent{
+
+  &.btn-transparent {
     background: transparent;
     border: 1px solid #394670;
     box-shadow: none;
   }
-  &::before{
+
+  &::before {
     content: '';
     position: absolute;
     top: 0;
     left: -100%;
     min-width: 100%;
     min-height: 100%;
-    background: linear-gradient( 90deg, transparent , rgba(255, 255, 255, 0.6), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
     transition: .4s;
   }
-  &:hover{
-    &::before{
+
+  &:hover {
+    &::before {
       left: 100%;
     }
   }
 
 }
-.btn__wrapper{
+
+.btn__wrapper {
   max-height: 50px;
 }
 
-.background-animate{
+.background-animate {
   position: absolute;
   z-index: -2;
 }
-.light-animate__yellow{
+
+.light-animate__yellow {
   animation: 10s light-1 infinite linear;
 }
-.light-animate__blue{
+
+.light-animate__blue {
   animation: 5s light-2 infinite linear;
 }
-.light-animate__blue-thin{
+
+.light-animate__blue-thin {
   animation: 15s light-3 infinite linear;
 }
-.light-animate__red{
+
+.light-animate__red {
   animation: 12s light-2 infinite linear;
 }
 
-.light-animate__blue-thick{
+.light-animate__blue-thick {
   animation: 8s light-3 infinite linear;
 }
 
-.light-animate__blue-long{
+.light-animate__blue-long {
   animation: 12s light-4 infinite linear;
 }
 
 @keyframes light-1 {
-  0%{
+  0% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 1;
   }
-  80%{
+  80% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
-    transform:  translateY(100px) translateX(-150px);
+    transform: translateY(100px) translateX(-150px);
   }
 }
 
 
 @keyframes light-2 {
-  0%{
+  0% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 1;
   }
-  80%{
+  80% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     transform: translateY(150px) translateX(-200px);
   }
 }
 
 @keyframes light-3 {
-  0%{
+  0% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 1;
   }
-  80%{
+  80% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     transform: translateY(50px) translateX(-50px);
   }
 }
+
 @keyframes light-4 {
-  0%{
+  0% {
     opacity: 0;
   }
-  20%{
+  20% {
     opacity: 1;
   }
-  80%{
+  80% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     transform: translateY(25px) translateX(-25px);
   }
 }
 
-.search-form__type-1{
+.search-form__type-1 {
   min-width: 350px;
   position: relative;
-  input{
+
+  input {
     background-color: #3639a6;
     padding: 0 60px 0 30px;
     border: 1px solid #3462c2;
@@ -230,15 +242,18 @@ h1, h2, h3{
     max-width: 350px;
     width: 100%;
     color: $text;
-    &::placeholder{
+
+    &::placeholder {
       color: #95a3fb;
     }
-    &:focus{
+
+    &:focus {
       border: 1px solid $wave;
       outline: transparent;
     }
   }
-  button{
+
+  button {
     position: absolute;
     cursor: pointer;
     right: 20px;
@@ -249,24 +264,28 @@ h1, h2, h3{
   }
 }
 
-.headline{
+.headline {
   text-align: center;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   margin-bottom: 50px;
-  .headline__text-top{
+
+  .headline__text-top {
     display: block;
     font-size: 24px;
     color: $wave;
     margin-bottom: 15px;
+    text-transform: uppercase;
   }
-  .headline__title{
+
+  .headline__title {
     color: #fff;
     font-size: 60px;
     line-height: 70px;
     margin-bottom: 25px;
   }
-  .headline__text{
+
+  .headline__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -274,68 +293,95 @@ h1, h2, h3{
 }
 
 
-.link-arrow{
+.link-arrow {
   color: $textPurple;
   transition: .3s all;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  svg{
+
+  svg {
     margin-left: 5px;
   }
-  path{
+
+  path {
     transition: .3s all;
   }
-  &:hover{
+
+  &:hover {
     color: $wave;
-    path{
+
+    path {
       fill: $wave;
     }
   }
 }
 
 
-.round__link{
+.round__link {
   border: 1px solid #554d96;
   border-radius: 50%;
   width: 30px;
   height: 30px;
   text-align: center;
-  svg{
+
+  svg {
     height: 7px;
     width: 14px;
     margin-bottom: 3px;
   }
 }
 
-.round__link-gradient{
+.round__link-gradient {
   position: relative;
   overflow: hidden;
-  svg{
+
+  svg {
     position: absolute;
     z-index: 4;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  &::before{
+
+  &::before {
     content: ' ';
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient( 90deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+    background: linear-gradient(90deg, rgb(193, 101, 221) 0%, rgb(92, 39, 254) 100%);
     opacity: 0;
     transition: .3s;
     border-radius: 50%;
   }
-  &:hover{
-    &::before{
+
+  &:hover {
+    &::before {
       content: ' ';
       opacity: 1;
     }
   }
+}
+
+.slick-arrow {
+  background: #26306e;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 6.5px 11px;
+  position: absolute;
+
+  &:hover {
+    background: linear-gradient(120deg, rgb(193, 101, 221) 0%, rgb(92, 39, 254) 100%);
+  }
+
+  img {
+    margin-top: 1px;
+  }
+
 }
 
 
