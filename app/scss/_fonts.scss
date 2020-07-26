@@ -195,8 +195,6 @@
   font-style: normal;
 }
 
-
-
 /*!
 * @package IcoFont
 * @version 1.0.1
@@ -328,3 +326,14 @@
 {
   content: "\ea93";
 }
+
+.icofont-close:before
+{
+  content: "\eee4";
+}
+
+.icofont-check:before
+{
+  content: "\eed8";
+}
+
