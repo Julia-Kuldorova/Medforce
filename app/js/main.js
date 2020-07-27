@@ -3,7 +3,6 @@ $(function(){
 
     $('select.select-box').styler();
 
-
     setTimeout(function() {
 	      $('input, select').styler();
     }, 100)
@@ -35,6 +34,7 @@ $(function(){
         readOnly: true,
         ratedFill: "#ffcc00"
     });
+
     $(".qfa__item .qfa__item-btn").on("click", function  () {
         $(this).closest('.qfa__item').children('.qfa__item-bottom').slideToggle();
         $(this).toggleClass('active');
