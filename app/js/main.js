@@ -40,4 +40,44 @@ $(function(){
         $(this).toggleClass('active');
     })
 
+    gsap.registerPlugin(ScrollTrigger);
+
+
+    let tl1 = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".advantages",
+            start: "center bottom"
+        }
+    })
+
+    tl1.from(".advantages__info-box", { x: 100, opacity: 0, duration: 1.5})
+
+    let tl2  = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".join",
+            start: "center bottom"
+        }
+    })
+
+    tl2.from(".join__aside", { x: -100, opacity: 0, duration: 1.5})
+        .from(".join__box-bottom-wrapper",{ y: 100, opacity: 0, duration: 1.5} )
+
+    let tl3  = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".comments",
+            start: "center bottom"
+        }
+    })
+
+    tl3.from(".comments-headline", { x: 100, opacity: 0, duration: 1.5})
+
+
+    let tl4  = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".qfa",
+            start: "center bottom"
+        }
+    })
+
+    tl4.from(".qfa__img", { x: 100, opacity: 0, duration: 1.5})
 });
