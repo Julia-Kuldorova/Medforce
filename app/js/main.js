@@ -40,6 +40,18 @@ $(function(){
         $(this).toggleClass('active');
     })
 
+    $(".search__btn-top").on("click", function () {
+        $(this).closest('.header-top').children('.header-search').addClass("active");
+    })
+
+    $(".search-form__btn-close").on("click", function () {
+        $(".header-search").removeClass("active")
+    })
+
+    $(".header-top__btn-menu").on("click", function () {
+        $(".header-bottom").toggleClass("active")
+    })
+
     gsap.registerPlugin(ScrollTrigger);
 
 

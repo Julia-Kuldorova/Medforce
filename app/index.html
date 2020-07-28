@@ -58,8 +58,13 @@
                 <div class="container">
                     <div class="header__inner">
                         <div class="header-top">
+                            <div class="header-top__btn-menu">
+                                <div class="btn-menu__row"></div>
+                                <div class="btn-menu__row"></div>
+                                <div class="btn-menu__row"></div>
+                            </div>
                             <div class="header-top__logo">
-                                <a class="logo" href="#" style="background-image: url(images/logo.png)"></a>
+                                <a class="logo" href="#" style="background-image: url(images/Logo.png)"></a>
                             </div>
                             <div class="header-top__box">
                                 <div class="header-top__links">
@@ -101,6 +106,33 @@
                                     </a>
                                 </div>
                             </div>
+                            <div class="header-top__search">
+                                <button class="search__btn-top">
+                                    <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="16px" height="16px">
+                                        <image x="0px" y="0px" width="16px" height="16px"
+                                               xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAulBMVEUFw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw97///+bc3fCAAAAPHRSTlMASM3YW5zUe3PHuJ9ROr8+Titm3txwRhtKKDxlIOngp14MFRYCHeoB28BUOKPtZHjr9H5ybzEfd3WIhfdAgi6mAAAAAWJLR0Q90G1RWQAAAAd0SU1FB+QHEBAmE/h+GTEAAACOSURBVBjTXY/XEoJADEWjoigWsGIv2Hvv9/+/S7KEjEMecuaezGayRESpNICMRXFlkbOtfAGO5CJKhmVUDF14Mqmixqg39K0D7miqaMFn0VbRQZdFT4WLftgHQxUjs2OMieQAtuF0FuU5FjJZrtabrbfDHgcRx1P4l/OFrrjF6/z7g/H8OyqqF94J8/n+AKDQDgKw8pwZAAAAAElFTkSuQmCC"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="header-search">
+                                <form class="search-form__type-1">
+                                    <input type="text" placeholder="I’m searching for _" required>
+                                    <button class="search__icon search-form__btn" type="submit">
+                                        <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                width="16px" height="16px">
+                                            <image x="0px" y="0px" width="16px" height="16px"
+                                                   xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAulBMVEUFw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw94Fw97///+bc3fCAAAAPHRSTlMASM3YW5zUe3PHuJ9ROr8+Titm3txwRhtKKDxlIOngp14MFRYCHeoB28BUOKPtZHjr9H5ybzEfd3WIhfdAgi6mAAAAAWJLR0Q90G1RWQAAAAd0SU1FB+QHEBAmE/h+GTEAAACOSURBVBjTXY/XEoJADEWjoigWsGIv2Hvv9/+/S7KEjEMecuaezGayRESpNICMRXFlkbOtfAGO5CJKhmVUDF14Mqmixqg39K0D7miqaMFn0VbRQZdFT4WLftgHQxUjs2OMieQAtuF0FuU5FjJZrtabrbfDHgcRx1P4l/OFrrjF6/z7g/H8OyqqF94J8/n+AKDQDgKw8pwZAAAAAElFTkSuQmCC"/>
+                                        </svg>
+                                    </button>
+
+                                </form>
+                                <div class="icofont-close search-form__btn-close"></div>
+                            </div>
                         </div>
                         <div class="header-bottom">
                             <nav>
@@ -137,10 +169,10 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="header-search">
+                            <div class="header-search header-search__bottom">
                                 <form class="search-form__type-1">
                                     <input type="text" placeholder="I’m searching for _" required>
-                                    <button type="submit">
+                                    <button class="search__icon search-form__btn" type="submit">
                                         <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -151,9 +183,41 @@
                                     </button>
                                 </form>
                             </div>
+                            <div class="header-bottom__box">
+                                <ul class="social__links">
+                                    <li>
+                                        <a href="#">
+                                            <span class="icofont-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icofont-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icofont-pinterest"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="icofont-google-plus"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="header-top__language">
+                                    <form>
+                                        <select class="language select-box" name="">
+                                            <option class="q-checkbox disabled" value="">Language</option>
+                                            <option value="">English</option>
+                                            <option value="">German</option>
+                                        </select>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </header>
 
@@ -169,6 +233,9 @@
             //      content-top start
             ////////////////////////////////
             -->
+
+
+            <!--
 
             <section class="content-top">
                 <div class="container">
@@ -209,6 +276,8 @@
                 </div>
             </section>
 
+            -->
+
             <!--
             /////////////////////////////////
             //      content-top end
@@ -229,158 +298,162 @@
            ////////////////////////////////
        -->
 
-        <section class="advantages">
-            <div class="background-animate__wrapper background-animate__advantages">
-                <div class="background-animate light-animate__yellow light-animate__yellow4">
-                    <img src="images/background/light-10.png" alt="">
-                </div>
-                <div class="background-animate light-animate__red light-animate__red2">
-                    <img src="images/background/light-4.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue light-animate__blue3">
-                    <img src="images/background/light-2.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin3">
-                    <img src="images/background/light-9.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin4">
-                    <img src="images/background/light-9.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin5">
-                    <img src="images/background/light-9.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin6">
-                    <img src="images/background/light-9.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thick light-animate__blue-thick1">
-                    <img src="images/background/light-6.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thick light-animate__blue-thick2">
-                    <img src="images/background/light-6.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thick light-animate__blue-thick3">
-                    <img src="images/background/light-6.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-long light-animate__blue-long1">
-                    <img src="images/background/light-5.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-long light-animate__blue-long2">
-                    <img src="images/background/light-5.png" alt="">
-                </div>
-            </div>
-            <div class="container">
-                <div class="advantages__inner">
-                    <div class="advantages__items-box">
-                        <div class="advantages__items-row">
-                            <div class="advantages__item">
-                                <div class="advantages__item-img ">
-                                    <img src="images/icons/joystick.png" alt="">
-                                </div>
-                                <div class="advantages__item-title">
-                                    Great PC Games
-                                </div>
-                                <div class="advantages__item-text">
-                                    Grand Theft Auto,
-                                    Quake,
-                                    BioShock Infinite
-                                </div>
-                                <a class="advantages__item-link link-arrow" href="#">
-                                    Read More
-                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                              fill="white"/>
-                                    </svg>
-                                </a>
-                            </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-img">
-                                    <img src="images/icons/people.png" alt="">
-                                </div>
-                                <div class="advantages__item-title">
-                                    Friends & community
-                                </div>
-                                <div class="advantages__item-text">
-                                    Friendliness, responsiveness,
-                                    support
-                                </div>
-                                <a class="advantages__item-link link-arrow" href="#">
-                                    Read More
-                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                              fill="white"/>
-                                    </svg>
-                                </a>
-                            </div>
+
+        <!--
+                <section class="advantages">
+                    <div class="background-animate__wrapper background-animate__advantages">
+                        <div class="background-animate light-animate__yellow light-animate__yellow4">
+                            <img src="images/background/light-10.png" alt="">
                         </div>
-                        <div class="advantages__items-row advantages__items-row-right">
-                            <div class="advantages__item">
-                                <div class="advantages__item-img advantages__item-img__mouse">
-                                    <img src="images/icons/mouse.png" alt="">
+                        <div class="background-animate light-animate__red light-animate__red2">
+                            <img src="images/background/light-4.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue light-animate__blue3">
+                            <img src="images/background/light-2.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thin light-animate__blue-thin3">
+                            <img src="images/background/light-9.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thin light-animate__blue-thin4">
+                            <img src="images/background/light-9.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thin light-animate__blue-thin5">
+                            <img src="images/background/light-9.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thin light-animate__blue-thin6">
+                            <img src="images/background/light-9.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thick light-animate__blue-thick1">
+                            <img src="images/background/light-6.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thick light-animate__blue-thick2">
+                            <img src="images/background/light-6.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-thick light-animate__blue-thick3">
+                            <img src="images/background/light-6.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-long light-animate__blue-long1">
+                            <img src="images/background/light-5.png" alt="">
+                        </div>
+                        <div class="background-animate light-animate__blue-long light-animate__blue-long2">
+                            <img src="images/background/light-5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="advantages__inner">
+                            <div class="advantages__items-box">
+                                <div class="advantages__items-row">
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img ">
+                                            <img src="images/icons/joystick.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-title">
+                                            Great PC Games
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            Grand Theft Auto,
+                                            Quake,
+                                            BioShock Infinite
+                                        </div>
+                                        <a class="advantages__item-link link-arrow" href="#">
+                                            Read More
+                                            <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="images/icons/people.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-title">
+                                            Friends & community
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            Friendliness, responsiveness,
+                                            support
+                                        </div>
+                                        <a class="advantages__item-link link-arrow" href="#">
+                                            Read More
+                                            <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="advantages__item-title">
-                                    Platform for gaming
+                                <div class="advantages__items-row advantages__items-row-right">
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img advantages__item-img__mouse">
+                                            <img src="images/icons/mouse.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-title">
+                                            Platform for gaming
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            You can be as overclocked or as budget as you want.
+                                        </div>
+                                        <a class="advantages__item-link link-arrow" href="#">
+                                            Read More
+                                            <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="advantages__item">
+                                        <div class="advantages__item-img">
+                                            <img src="images/icons/person.png" alt="">
+                                        </div>
+                                        <div class="advantages__item-title">
+                                            Customer service
+                                        </div>
+                                        <div class="advantages__item-text">
+                                            Attention to detail, uniform service standard
+                                        </div>
+                                        <a class="advantages__item-link link-arrow" href="#">
+                                            Read More
+                                            <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                                      fill="white"/>
+                                            </svg>
+                                        </a>
+                                    </div>
                                 </div>
-                                <div class="advantages__item-text">
-                                    You can be as overclocked or as budget as you want.
-                                </div>
-                                <a class="advantages__item-link link-arrow" href="#">
-                                    Read More
-                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                              fill="white"/>
-                                    </svg>
-                                </a>
                             </div>
-                            <div class="advantages__item">
-                                <div class="advantages__item-img">
-                                    <img src="images/icons/person.png" alt="">
+                            <div class="advantages__info-box">
+                                <span class="advantages__info-small-title">
+                                    ABOUT Medforce
+                                </span>
+                                <h2 class="advantages__info-title">
+                                    Stunning artwork and
+                                    gameplay unlike any
+                                    other.
+                                </h2>
+                                <div class="advantages__info-text__box">
+                                    <p class="advantages__text-top">All the games, all the time. No additional purchases or
+                                        revolving monthly catalogs. Play whatever you want, whenever you want, as many times as
+                                        you want.</p>
+                                    <p class="advantages__text-bottom">vestibulum urna id, vulputate ipsum. Integer sodales nisl
+                                        eget eros lacinia, varius pulvinar justo convallis. Ut id ante non quam viverra egestas
+                                        vel ac eros. Morbi ac rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit.</p>
                                 </div>
-                                <div class="advantages__item-title">
-                                    Customer service
-                                </div>
-                                <div class="advantages__item-text">
-                                    Attention to detail, uniform service standard
-                                </div>
-                                <a class="advantages__item-link link-arrow" href="#">
-                                    Read More
-                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                              fill="white"/>
-                                    </svg>
+                                <a class="advantages__btn btn" href="#">
+                                    Read Our Story
+                                    <img src="images/icons/arrow-right.svg" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
-                    <div class="advantages__info-box">
-                        <span class="advantages__info-small-title">
-                            ABOUT Medforce
-                        </span>
-                        <h2 class="advantages__info-title">
-                            Stunning artwork and
-                            gameplay unlike any
-                            other.
-                        </h2>
-                        <div class="advantages__info-text__box">
-                            <p class="advantages__text-top">All the games, all the time. No additional purchases or
-                                revolving monthly catalogs. Play whatever you want, whenever you want, as many times as
-                                you want.</p>
-                            <p class="advantages__text-bottom">vestibulum urna id, vulputate ipsum. Integer sodales nisl
-                                eget eros lacinia, varius pulvinar justo convallis. Ut id ante non quam viverra egestas
-                                vel ac eros. Morbi ac rutrum erat. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit.</p>
-                        </div>
-                        <a class="advantages__btn btn" href="#">
-                            Read Our Story
-                            <img src="images/icons/arrow-right.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+                </section>
+                -->
+
 
         <!--
            /////////////////////////////////
@@ -393,6 +466,7 @@
            //     play  start
            ////////////////////////////////
        -->
+        <!--
 
         <section class="play">
             <div class="container-fluid">
@@ -642,6 +716,8 @@
             </div>
         </section>
 
+        -->
+
         <!--
            /////////////////////////////////
            //     play  end
@@ -653,156 +729,158 @@
            //     join start
            ////////////////////////////////
        -->
-
-        <section class="join">
-            <div class="background-animate__wrapper background-animate__join">
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin7">
-                    <img src="images/background/light-9.png" alt="">
+        <!--
+            <section class="join">
+                <div class="background-animate__wrapper background-animate__join">
+                    <div class="background-animate light-animate__blue-thin light-animate__blue-thin7">
+                        <img src="images/background/light-9.png" alt="">
+                    </div>
+                    <div class="background-animate light-animate__blue-thin light-animate__blue-thin8">
+                        <img src="images/background/light-9.png" alt="">
+                    </div>
+                    <div class="background-animate light-animate__blue-thin light-animate__blue-thin9">
+                        <img src="images/background/light-9.png" alt="">
+                    </div>
+                    <div class="background-animate light-animate__blue-thick light-animate__blue-thick4">
+                        <img src="images/background/light-6.png" alt="">
+                    </div>
+                    <div class="background-animate light-animate__blue-thick light-animate__blue-thick5">
+                        <img src="images/background/light-6.png" alt="">
+                    </div>
                 </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin8">
-                    <img src="images/background/light-9.png" alt="">
+                <div class="join-top">
+                    <div class="join-top__inner">
+                        <div class="container">
+                            <div class="join__inner">
+                                <div class="headline join-headline">
+                                    <span class="headline__text-top">
+                                    Join players
+                                    </span>
+                                    <div class="headline__title">
+                                        Around The World
+                                    </div>
+                                    <div class="headline__text">
+                                        Whether you want to go on an epic adventure, show your skills online
+                                        or play together with family and friends
+                                    </div>
+                                </div>
+                                <div class="join__box">
+                                    <div class="join__box-top-wrapper">
+                                        <div class="join__aside">
+                                            <div class="join__aside-item">
+                                                <div class="join__aside-number">
+                                                    15 034 087
+                                                </div>
+                                                <div class="join__aside-text">
+                                                    Users
+                                                </div>
+                                            </div>
+                                            <div class="join__aside-item">
+                                                <div class="join__aside-number">
+                                                    50 125 198
+                                                </div>
+                                                <div class="join__aside-text">
+                                                    Page views per month
+                                                </div>
+                                            </div>
+                                            <div class="join__aside-item">
+                                                <div class="join__aside-number">
+                                                    33
+                                                </div>
+                                                <div class="join__aside-text">
+                                                    Countries
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="join__map">
+                                            <div class="join__map-inner">
+                                                <div class="map-point__wrapper map-point__wrapper-1">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-2">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-3">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-4">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-5">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-6">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-7">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <div class="map-point__wrapper map-point__wrapper-8">
+                                                    <div class="map-point"></div>
+                                                </div>
+                                                <img src="images/background/map.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="background-animate light-animate__blue-thin light-animate__blue-thin9">
-                    <img src="images/background/light-9.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thick light-animate__blue-thick4">
-                    <img src="images/background/light-6.png" alt="">
-                </div>
-                <div class="background-animate light-animate__blue-thick light-animate__blue-thick5">
-                    <img src="images/background/light-6.png" alt="">
-                </div>
-            </div>
-            <div class="join-top">
-                <div class="join-top__inner">
+                <div class="join-bottom">
                     <div class="container">
-                        <div class="join__inner">
-                            <div class="headline join-headline">
-                                <span class="headline__text-top">
-                                Join players
-                                </span>
-                                <div class="headline__title">
-                                    Around The World
+                        <div class="join__box-bottom-wrapper">
+                            <div class="join-bottom__item">
+                                <img src="images/join-img1.png" alt="">
+                                <div class="join-bottom__item-text">
+                                    New Tournaments
+                                    Every Day
                                 </div>
-                                <div class="headline__text">
-                                    Whether you want to go on an epic adventure, show your skills online
-                                    or play together with family and friends
-                                </div>
+                                <a class="link-arrow" href="#">
+                                    View Tournamnets
+                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
                             </div>
-                            <div class="join__box">
-                                <div class="join__box-top-wrapper">
-                                    <div class="join__aside">
-                                        <div class="join__aside-item">
-                                            <div class="join__aside-number">
-                                                15 034 087
-                                            </div>
-                                            <div class="join__aside-text">
-                                                Users
-                                            </div>
-                                        </div>
-                                        <div class="join__aside-item">
-                                            <div class="join__aside-number">
-                                                50 125 198
-                                            </div>
-                                            <div class="join__aside-text">
-                                                Page views per month
-                                            </div>
-                                        </div>
-                                        <div class="join__aside-item">
-                                            <div class="join__aside-number">
-                                                33
-                                            </div>
-                                            <div class="join__aside-text">
-                                                Countries
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="join__map">
-                                        <div class="join__map-inner">
-                                            <div class="map-point__wrapper map-point__wrapper-1">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-2">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-3">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-4">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-5">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-6">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-7">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <div class="map-point__wrapper map-point__wrapper-8">
-                                                <div class="map-point"></div>
-                                            </div>
-                                            <img src="images/background/map.png" alt="">
-                                        </div>
-                                    </div>
+                            <div class="join-bottom__item">
+                                <img src="images/join-img2.png" alt="">
+                                <div class="join-bottom__item-text">
+                                    Challenge Your
+                                    Friends
                                 </div>
+                                <a class="link-arrow" href="#">
+                                    Take Challenge
+                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="join-bottom__item">
+                                <img src="images/join-img3.png" alt="">
+                                <div class="join-bottom__item-text">
+                                    Available On
+                                    Any Device
+                                </div>
+                                <a class="link-arrow" href="#">
+                                    Choose your device
+                                    <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
+                                              fill="white"/>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="join-bottom">
-                <div class="container">
-                    <div class="join__box-bottom-wrapper">
-                        <div class="join-bottom__item">
-                            <img src="images/join-img1.png" alt="">
-                            <div class="join-bottom__item-text">
-                                New Tournaments
-                                Every Day
-                            </div>
-                            <a class="link-arrow" href="#">
-                                View Tournamnets
-                                <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                          fill="white"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="join-bottom__item">
-                            <img src="images/join-img2.png" alt="">
-                            <div class="join-bottom__item-text">
-                                Challenge Your
-                                Friends
-                            </div>
-                            <a class="link-arrow" href="#">
-                                Take Challenge
-                                <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                          fill="white"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="join-bottom__item">
-                            <img src="images/join-img3.png" alt="">
-                            <div class="join-bottom__item-text">
-                                Available On
-                                Any Device
-                            </div>
-                            <a class="link-arrow" href="#">
-                                Choose your device
-                                <svg class="arrow-right__img" width="20" height="10" viewBox="0 0 20 10" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.8408 4.72852L13.3548 0.112515C13.144 -0.037505 12.8013 -0.037505 12.5905 0.112515C12.3797 0.262535 12.3797 0.506415 12.5905 0.656435L18.1534 4.61543H0.540504C0.242146 4.61543 0 4.78776 0 5.0001C0 5.21243 0.242146 5.38476 0.540504 5.38476H18.1534L12.5905 9.34376C12.3797 9.49378 12.3797 9.73766 12.5905 9.88768C12.6964 9.96307 12.8348 10 12.9732 10C13.1115 10 13.2499 9.9623 13.3559 9.88768L19.8419 5.27167C20.0527 5.12165 20.0527 4.87777 19.8419 4.72775L19.8408 4.72852Z"
-                                          fill="white"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+            -->
+
         <!--
           /////////////////////////////////
           //     join  end
@@ -814,7 +892,7 @@
            //     games start
            ////////////////////////////////
          -->
-
+        <!--
         <section class="games">
             <div class="container">
                 <div class="games__inner">
@@ -1036,7 +1114,7 @@
                 </div>
             </div>
         </section>
-
+           -->
         <!--
           /////////////////////////////////
           //     games  end
@@ -1048,6 +1126,7 @@
            //    comments start
            ////////////////////////////////
          -->
+        <!--
         <section class="comments">
             <div class="background-animate__wrapper background-animate__comments">
                 <div class="background-animate light-animate__blue-thin light-animate__blue-thin10">
@@ -1178,7 +1257,7 @@
                 </div>
             </div>
         </section>
-
+        -->
         <!--
            /////////////////////////////////
            //    comments end
@@ -1190,6 +1269,7 @@
            //    price start
            ////////////////////////////////
          -->
+        <!--
         <section class="price">
             <div class="container">
                 <div class="price__inner">
@@ -1290,6 +1370,7 @@
                 </div>
             </div>
         </section>
+        -->
         <!--
            /////////////////////////////////
            //    price end
@@ -1301,7 +1382,7 @@
           //    QFA start
           ////////////////////////////////
         -->
-
+        <!--
         <section class="qfa">
             <div class="container">
                 <div class="qfa__inner">
@@ -1439,7 +1520,7 @@
                 </div>
             </div>
         </section>
-
+        -->
         <!--
           /////////////////////////////////
           //    QFA end
@@ -1453,142 +1534,142 @@
          //    footer start
          ////////////////////////////////
        -->
-
-    <footer class="footer">
-        <div class="background-animate__wrapper background-animate__comments">
-            <div class="background-animate light-animate__blue-thin light-animate__blue-thin13">
-                <img src="images/background/light-9.png" alt="">
+    <!--
+        <footer class="footer">
+            <div class="background-animate__wrapper background-animate__comments">
+                <div class="background-animate light-animate__blue-thin light-animate__blue-thin13">
+                    <img src="images/background/light-9.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thin light-animate__blue-thin14">
+                    <img src="images/background/light-9.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thin light-animate__blue-thin15">
+                    <img src="images/background/light-9.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thin light-animate__blue-thin16">
+                    <img src="images/background/light-9.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick7">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick8">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick9">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick10">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick11">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-thick light-animate__blue-thick12">
+                    <img src="images/background/light-6.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-long light-animate__blue-long5">
+                    <img src="images/background/light-5.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-long light-animate__blue-long6">
+                    <img src="images/background/light-5.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-long light-animate__blue-long7">
+                    <img src="images/background/light-5.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-long light-animate__blue-long8">
+                    <img src="images/background/light-5.png" alt="">
+                </div>
+                <div class="background-animate light-animate__blue-long light-animate__blue-long9">
+                    <img src="images/background/light-5.png" alt="">
+                </div>
             </div>
-            <div class="background-animate light-animate__blue-thin light-animate__blue-thin14">
-                <img src="images/background/light-9.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thin light-animate__blue-thin15">
-                <img src="images/background/light-9.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thin light-animate__blue-thin16">
-                <img src="images/background/light-9.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick7">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick8">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick9">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick10">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick11">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-thick light-animate__blue-thick12">
-                <img src="images/background/light-6.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-long light-animate__blue-long5">
-                <img src="images/background/light-5.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-long light-animate__blue-long6">
-                <img src="images/background/light-5.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-long light-animate__blue-long7">
-                <img src="images/background/light-5.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-long light-animate__blue-long8">
-                <img src="images/background/light-5.png" alt="">
-            </div>
-            <div class="background-animate light-animate__blue-long light-animate__blue-long9">
-                <img src="images/background/light-5.png" alt="">
-            </div>
-        </div>
-        <div class="container">
-            <div class="footer__inner">
-                <div class="footer__top">
-                    <div class="footer__top-box footer__top-box-left">
-                        <div class="footer__title-top">
-                            Subscribe to Medforce
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__top">
+                        <div class="footer__top-box footer__top-box-left">
+                            <div class="footer__title-top">
+                                Subscribe to Medforce
+                            </div>
+                            <div class="footer__title">
+                                To Get Exclusive Benefits
+                            </div>
+                            <div class="footer__form">
+                                <form>
+                                    <input type="email" placeholder="Your Email Address">
+                                    <button class="btn" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                            <div class="footer__text">
+                                We respect your privacy, so we never share your info
+                            </div>
                         </div>
-                        <div class="footer__title">
-                            To Get Exclusive Benefits
-                        </div>
-                        <div class="footer__form">
-                            <form>
-                                <input type="email" placeholder="Your Email Address">
-                                <button class="btn" type="submit">Subscribe</button>
-                            </form>
-                        </div>
-                        <div class="footer__text">
-                            We respect your privacy, so we never share your info
+                        <div class="footer__top-box">
+                            <div class="contact__btn-wrapper">
+                                <div class="contact__btn">
+                                    <a class="" href="#">
+                                    </a>
+                                    <div class="btn-shadow btn-shadow__1"></div>
+                                    <div class="btn-shadow btn-shadow__2"></div>
+                                    <div class="btn-shadow btn-shadow__3"></div>
+                                    <div class="btn-shadow btn-shadow__4"></div>
+                                    <div class="btn-shadow btn-shadow__5"></div>
+                                    <div class="btn-shadow btn-shadow__6"></div>
+                                    <div class="btn-shadow btn-shadow__7"></div>
+                                    <div class="btn-shadow btn-shadow__8"></div>
+                                    <div class="btn-shadow btn-shadow__9"></div>
+                                    <div class="btn-shadow btn-shadow__10"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="footer__top-box">
-                        <div class="contact__btn-wrapper">
-                            <div class="contact__btn">
-                                <a class="" href="#">
-                                </a>
-                                <div class="btn-shadow btn-shadow__1"></div>
-                                <div class="btn-shadow btn-shadow__2"></div>
-                                <div class="btn-shadow btn-shadow__3"></div>
-                                <div class="btn-shadow btn-shadow__4"></div>
-                                <div class="btn-shadow btn-shadow__5"></div>
-                                <div class="btn-shadow btn-shadow__6"></div>
-                                <div class="btn-shadow btn-shadow__7"></div>
-                                <div class="btn-shadow btn-shadow__8"></div>
-                                <div class="btn-shadow btn-shadow__9"></div>
-                                <div class="btn-shadow btn-shadow__10"></div>
+                    <div class="footer__bottom">
+                        <div class="footer__bottom-box">
+                            <div class="footer__bottom-logo">
+                                <a class="logo" href="#" style="background-image: url(images/Logo.png)"></a>
+                            </div>
+                            <div class="footer__bottom-join">
+                                <a class="btn" href="#">Join US</a>
+                            </div>
+                        </div>
+                        <div class="footer__copy">
+                            <div class="footer__copy-text">
+                                Copyright © 2019.All Rights Reserved By <a href="#">Medforce</a>
+                            </div>
+                            <div class="footer__copy-social">
+                                <ul class="social__links">
+                                    <li>
+                                        <a href="#" class="round__link">
+                                            <span class="icofont-facebook"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="round__link">
+                                            <span class="icofont-twitter"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="round__link">
+                                            <span class="icofont-pinterest"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="round__link">
+                                            <span class="icofont-google-plus"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="round__link">
+                                            <span class="icofont-instagram"></span>
+                                        </a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom-box">
-                        <div class="footer__bottom-logo">
-                            <a class="logo" href="#" style="background-image: url(images/logo.png)"></a>
-                        </div>
-                        <div class="footer__bottom-join">
-                            <a class="btn" href="#">Join US</a>
-                        </div>
-                    </div>
-                    <div class="footer__copy">
-                        <div class="footer__copy-text">
-                            Copyright © 2019.All Rights Reserved By <a href="#">Medforce</a>
-                        </div>
-                        <div class="footer__copy-social">
-                            <ul class="social__links">
-                                <li>
-                                    <a href="#" class="round__link">
-                                        <span class="icofont-facebook"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="round__link">
-                                        <span class="icofont-twitter"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="round__link">
-                                        <span class="icofont-pinterest"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="round__link">
-                                        <span class="icofont-google-plus"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="round__link">
-                                        <span class="icofont-instagram"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
-    </footer>
-
+        </footer>
+     -->
     <!--
          /////////////////////////////////
          //    footer end
