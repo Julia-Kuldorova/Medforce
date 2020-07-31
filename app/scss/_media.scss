@@ -59,7 +59,31 @@
   }
   .advantages__info-box{
     margin-bottom: 40px;
-    margin-top: 0px;
+    margin-top: 0;
+  }
+  .join__box-bottom-wrapper {
+    padding: 80px 0;
+  }
+  .join-bottom {
+    max-height: 190px;
+  }
+  .join__box-top-wrapper{
+    display: block;
+  }
+  .join__aside{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+  }
+  .join__aside-item{
+    max-width: 260px;
+  }
+  .join__map{
+    margin: 0 auto;
+  }
+  .join__inner {
+    padding: 100px 0 250px;
   }
 }
 
@@ -75,6 +99,40 @@
 @media(max-width: 880px) {
   .play-slider {
     max-width: 540px;
+  }
+}
+
+@media(max-width: 850px) {
+  .join__box-bottom-wrapper{
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .join-bottom__item{
+    margin: 0 auto 30px;
+    &::before{
+      display: none;
+    }
+    img{
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    .join-bottom__item-text {
+      font-size: 20px;
+    }
+  }
+  .join__aside-item{
+    padding: 20px;
+    margin: 0 10px 40px 10px;
+  }
+  .join__aside-number {
+    font-size: 20px;
+  }
+  .join__map{
+    margin-bottom: 100px;
+  }
+  .join__map {
+    margin-bottom: 185px;
   }
 }
 
@@ -206,7 +264,7 @@
     margin-right: 30px;
   }
   .advantages__inner {
-    padding: 50px 0 50px;
+    padding: 100px 0 50px;
   }
   .advantages__info-title {
     font-size: 50px;
@@ -216,6 +274,31 @@
     margin-bottom: 5px;
     font-size: 20px;
   }
+  .join__map{
+    .join__map-inner{
+      margin: 0 auto;
+      height: 300px;
+      width: 500px;
+    }
+    img{
+      height: 300px;
+      width: 500px;
+    }
+  }
+  .join__map {
+    margin-bottom: 100px;
+  }
+}
+
+@media(max-width: 700px) {
+  .join__aside{
+    display: block;
+  }
+  .join__aside-item{
+    max-width: 1000px;
+    margin: 0 0 20px 0;
+  }
+
 }
 
 @media(max-width: 600px) {
@@ -262,10 +345,22 @@
     margin-bottom: 0;
   }
   .content-top__inner {
-    padding: 50px 0 0px;
+    padding: 50px 0 0;
   }
   .content-top__play {
     margin: 60px auto 0;
+  }
+  .join__map .join__map-inner {
+    height: 200px;
+    width: 400px;
+    img{
+      height: 200px;
+      width: 400px;
+    }
+  }
+  .join__map {
+    margin-bottom: 10px;
+    margin-top: 60px;
   }
 }
 
@@ -288,6 +383,21 @@
   }
   .light-animate__blue2 {
     display: none;
+  }
+  .join__map .join__map-inner {
+    height: 150px;
+    width: 260px;
+    img{
+      height: 150px;
+      width: 260px;
+    }
+  }
+  .join__map {
+    margin-bottom: 0;
+    margin-top: 40px;
+  }
+  .join__inner {
+    padding: 100px 0 200px;
   }
 }
 
