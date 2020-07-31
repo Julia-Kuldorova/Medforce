@@ -15,7 +15,22 @@ $(function(){
             '<button class="slick-arrow slick-prev"><img src="../images/icons/arrow-prev.png" alt=""></button>',
         nextArrow:
             '<button class="slick-arrow slick-next"><img src="../images/icons/arrow-next.png" alt=""></button>',
-        variableWidth: true
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 880,
+                settings: {
+                    slidesToShow: 2,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
     });
     $('.comments-slider__inner').slick({
         infinite: true,

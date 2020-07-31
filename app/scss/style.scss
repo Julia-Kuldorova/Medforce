@@ -663,11 +663,16 @@
   position: absolute;
   top: 370px;
   left: 0;
+  width: 50%;
+  img{
+    width: 100%;
+  }
 }
 
 .play__headline {
   max-width: 590px;
   margin: 0 auto 50px;
+  padding: 0 15px;
 }
 
 .play__inner {
@@ -713,10 +718,13 @@
 }
 
 .play-slider__item {
-  @include background;
   max-width: 255px;
   min-width: 255px;
   width: 100%;
+}
+
+.play-slider__item-inner{
+  @include background;
   box-shadow: inset 0px -120px 100px 7px rgb(17, 17, 17);
 }
 
