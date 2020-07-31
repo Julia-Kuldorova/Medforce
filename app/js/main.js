@@ -54,15 +54,47 @@ $(function(){
 
     gsap.registerPlugin(ScrollTrigger);
 
+    ScrollTrigger.matchMedia({
 
-    let tl1 = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".advantages",
-            start: "center bottom"
+        "(min-width: 1000px)": function () {
+            let tl1 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".advantages",
+                    start: "center bottom"
+                }
+            });
+            tl1.from(".advantages__info-box", { x: 100, opacity: 0, duration: 1.5})
+        },
+
+        "(max-width: 570px)": function () {
+            let tl4 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".advantages__items-row-top",
+                     start: "top center",
+                    markers: true
+                }
+            });
+            tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .5}, "-=1")
+            tl4.from(".advantages__item-2", { x: 20,  opacity: 0,  duration: .5})
+
+
+            let tl5 = gsap.timeline({
+                scrollTrigger: {
+                    trigger: ".advantages__items-row-right",
+                    start: "top center",
+                    markers: true
+                }
+            });
+            tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .5}, "-=1")
+            tl5.from(".advantages__item-4", { x: 20,  opacity: 0,  duration: .5})
         }
+
     })
 
-    tl1.from(".advantages__info-box", { x: 100, opacity: 0, duration: 1.5})
+
+
+
+
 
     let tl2  = gsap.timeline({
         scrollTrigger: {

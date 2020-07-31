@@ -1,66 +1,79 @@
+@media(max-width: 1000px) {
+  .advantages__inner{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .advantages__info-box{
+    margin-bottom: 40px;
+    margin-top: 0px;
+  }
+}
 
 @media(max-width: 950px) {
-  .search-form__type-1{
-    min-width: 250px;
+  .search-form__type-1 {
+    min-width: 240px;
   }
-  .header__nav li+li {
-    margin-left: 28px;
+  .header__nav li + li {
+    margin-left: 26px;
   }
 }
 
 @media(max-width: 800px) {
-  .header-top{
-    .header-search{
+  .header-top {
+    .header-search {
       display: flex;
     }
   }
-  .header-top__box{
+  .header-top__box {
     display: none;
   }
-  .header-top{
+  .header-top {
     height: 50px;
 
   }
-  .header-top__logo{
-    .logo{
+  .header-top__logo {
+    .logo {
       width: 150px;
       height: 17px;
     }
 
   }
-  .header{
+  .header {
     position: relative;
   }
-  .header-search{
+  .header-search {
     position: absolute;
     top: -60px;
     left: 0;
     display: flex;
     width: 100%;
     background-color: $bg;
-    .search-form__type-1{
+
+    .search-form__type-1 {
       margin: 0 auto;
-      input{
+
+      input {
         height: 40px;
         max-width: 100%;
       }
-      .search__icon{
+
+      .search__icon {
         top: 12px;
         right: 15px;
 
       }
     }
   }
-  .header-top__btn-menu{
+  .header-top__btn-menu {
     display: block;
   }
-  .header-top__search{
+  .header-top__search {
     display: block;
   }
-  .header-search__bottom{
+  .header-search__bottom {
     display: none;
   }
-  .header-bottom{
+  .header-bottom {
     height: auto;
     display: block;
     max-width: 290px;
@@ -71,41 +84,47 @@
     z-index: 20;
     left: -100%;
     transition: .5s all;
-    &.active{
+
+    &.active {
       left: 15px;
     }
   }
-  .header__nav{
+  .header__nav {
     margin-bottom: 20px;
-    li{
+
+    li {
       display: block;
       border-bottom: 1px solid #6c6cd2;
       padding: 5px 0;
       transition: .3s all;
-      &:hover{
+
+      &:hover {
         padding: 5px 0 5px 15px;
       }
     }
-    li +li {
+
+    li + li {
       margin: 0;
     }
   }
-  .header-bottom__box{
+  .header-bottom__box {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .header-top__language{
+
+    .header-top__language {
       margin-left: 20px;
     }
-    .social__links{
+
+    .social__links {
       margin-bottom: 10px;
     }
   }
-  .search-form__btn-close{
+  .search-form__btn-close {
     display: block;
   }
-  .content-top__inner{
+  .content-top__inner {
     padding: 50px 0 50px;
   }
   .content-top__wrapper::before {
@@ -120,30 +139,56 @@
   .content-top__text {
     font-size: 21px;
   }
-  .content-top__play-wrapper{
+  .content-top__play-wrapper {
     transform: scale(.7);
   }
   .content-top__play {
     margin-right: 30px;
   }
+  .advantages__inner {
+    padding: 50px 0 50px;
+  }
+  .advantages__info-title {
+    font-size: 50px;
+    line-height: 60px;
+  }
+  .advantages__info-small-title {
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
 }
 
 
 @media(max-width: 570px) {
-  .content-top__links{
+  .content-top__links {
     flex-direction: column;
-    a{
+
+    a {
       margin-bottom: 10px;
     }
+  }
+  .advantages__items-box{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .advantages__items-row{
+    margin: 0;
+  }
+  .content-top__wrapper {
+    margin-bottom: 0;
+  }
+  .content-top__inner {
+    padding: 50px 0 0px;
+  }
+  .content-top__play {
+    margin: 60px auto 0;
   }
 }
 
 @media(max-width: 470px) {
-  .content-top__inner{
+  .content-top__inner {
     flex-direction: column;
-  }
-  .content-top__play{
-    margin: 20px auto 0;
   }
   .content-top__wrapper::before {
     content: ' ';
@@ -152,22 +197,22 @@
   .btn {
     padding: 8px 25px;
   }
-  .light-animate__yellow1{
+  .light-animate__yellow1 {
     display: none;
   }
-  .light-animate__yellow3{
+  .light-animate__yellow3 {
     display: none;
   }
-  .light-animate__blue2{
+  .light-animate__blue2 {
     display: none;
   }
 }
 
 @media(max-width: 420px) {
-  .header-search{
-    .search-form__type-1{
+  .header-search {
+    .search-form__type-1 {
       margin: 0 0 0 14px;
-      max-width: 255px;
+      max-width: 240px;
     }
   }
 }

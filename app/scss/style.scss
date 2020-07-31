@@ -228,7 +228,7 @@
   position: absolute;
   right: 15px;
   padding: 4px;
-  top: 7px;
+  top: 9px;
   display: none;
   cursor: pointer;
 }
@@ -365,7 +365,7 @@
 
 .advantages {
   position: relative;
-
+  overflow: hidden;
   &::before {
     content: ' ';
     position: absolute;
@@ -405,6 +405,7 @@
   background-color: #1d1d55;
   border-radius: 10px;
   text-align: center;
+  min-width: 240px;
   max-width: 255px;
   padding: 28px 24px;
   margin-bottom: 30px;
@@ -467,6 +468,7 @@
     position: absolute;
     opacity: 0;
     transition: .4s all;
+    border-radius: 50%;
   }
 
   img {
@@ -546,79 +548,79 @@
 }
 
 .light-animate__yellow4 {
-  top: 250px;
+  top: 20%;
   right: 5%;
   animation-delay: -2s;
 }
 
 .light-animate__red2 {
-  top: 10px;
+  top: 2%;
   right: 20%;
   animation-delay: -3s;
 }
 
 .light-animate__blue3 {
-  top: 380px;
+  top: 38%;
   right: 10%;
   animation-delay: -1s;
 }
 
 .light-animate__blue-thin3 {
   transform: scale(0.3);
-  top: 350px;
+  top: 29%;
   right: 26%;
   animation-delay: -1s;
 }
 
 .light-animate__blue-thin4 {
-  top: 400px;
+  bottom: 44%;
   left: 5%;
   animation-delay: -4s;
 }
 
 .light-animate__blue-thin5 {
   transform: scale(0.2);
-  top: 700px;
+  bottom: 20%;
   left: 7%;
   animation-delay: -3s;
 }
 
 .light-animate__blue-thin6 {
   transform: scale(0.1);
-  bottom: 200px;
+  bottom: 23%;
   right: 5%;
   animation-delay: -9s;
 }
 
 .light-animate__blue-thick1 {
-  top: 200px;
+  top: 10%;
   left: 25%;
   animation-delay: -1;
 }
 
 .light-animate__blue-thick2 {
   transform: scale(0.1);
-  top: 200px;
+  top: 10%;
   left: 23%;
   animation-delay: -7s;
 }
 
 .light-animate__blue-thick3 {
   transform: scale(0.1);
-  top: 270px;
+  top: 15%;
   left: 22%;
   animation-delay: -4s;
 }
 
 .light-animate__blue-long1 {
   transform: scale(0.1);
-  top: 100px;
+  top: 5%;
   left: 18%;
   animation-delay: -7s;
 }
 
 .light-animate__blue-long2 {
-  top: 400px;
+  top: 27%;
   left: 10%;
   animation-delay: -5s;
 }
