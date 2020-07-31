@@ -89,8 +89,8 @@ $(function(){
                     markers: true
                 }
             });
-            tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .5}, "-=1")
-            tl4.from(".advantages__item-2", { x: 20,  opacity: 0,  duration: .5})
+            tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .3}, "-=1")
+            tl4.from(".advantages__item-2", { x: 20,  opacity: 0,  duration: .3})
 
 
             let tl5 = gsap.timeline({
@@ -100,8 +100,8 @@ $(function(){
                     markers: true
                 }
             });
-            tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .5}, "-=1")
-            tl5.from(".advantages__item-4", { x: 20,  opacity: 0,  duration: .5})
+            tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .3}, "-=1")
+            tl5.from(".advantages__item-4", { x: 20,  opacity: 0,  duration: .3})
         }
 
     })
