@@ -1688,7 +1688,7 @@
 .price__box {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin: 0 -10px 55px;
 }
 
 .price__item {
@@ -1701,7 +1701,7 @@
   padding: 60px 30px 40px;
   text-align: center;
   position: relative;
-
+  margin: 0 10px;
   &::after {
     content: ' ';
     background-image: url("../images/background__price-item.png");
@@ -1783,7 +1783,7 @@
   font-size: 18px;
   text-align: center;
 
-  span {
+  a {
     color: $wave;
   }
 }

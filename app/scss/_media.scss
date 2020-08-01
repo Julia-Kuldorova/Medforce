@@ -58,7 +58,7 @@
   }
   .comments-headline {
     text-align: center;
-    max-width: 360px;
+    max-width: 500px;
     width: 100%;
   }
 }
@@ -108,6 +108,14 @@
   .advantages__info-box{
     opacity: 1 !important;
     transform: translate(0px, 0px) !important;
+  }
+  .price__box{
+    flex-direction: column;
+    margin: 0 0 25px;
+    align-items: center;
+  }
+  .price__item{
+    margin-bottom: 30px;
   }
 }
 
@@ -521,7 +529,7 @@
     padding: 10px 0 10px;
   }
   .comments__inner{
-    padding: 50px 0;
+    padding: 50px 0 80px;
   }
   .comments:before {
     min-height: 670px;
@@ -539,6 +547,9 @@
   .games__inner{
     padding: 100px 0 50px;
   }
+  .price__inner {
+    padding: 70px 0 70px;
+  }
 }
 
 @media(max-width: 420px) {
@@ -547,6 +558,21 @@
       margin: 0 0 0 14px;
       max-width: 240px;
     }
+  }
+}
+
+@media(max-width: 370px) {
+  .price__item {
+    padding: 60px 20px 30px;
+  }
+  .price__item::after {
+    height: 166px;
+  }
+  .price__item-list{
+    font-size: 15px;
+  }
+  .price__item-list li {
+    padding: 10px 0 10px 35px;
   }
 }
 
