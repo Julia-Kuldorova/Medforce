@@ -1794,6 +1794,10 @@
 
 // qfa start
 
+.qfa{
+  overflow-x: hidden;
+}
+
 .qfa__inner {
   padding: 110px 0 100px;
 }
@@ -1811,6 +1815,7 @@
 .qfa__img {
   img {
     margin-top: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -1838,8 +1843,9 @@
 }
 
 .qfa__item-btn {
-  width: 35px;
-  height: 35px;
+  margin-left: 10px;
+  min-width: 35px;
+  min-height: 35px;
   border-radius: 50%;
   background-color: $wave;
   cursor: pointer;
