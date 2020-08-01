@@ -67,6 +67,11 @@ $(function(){
         $(".header-bottom").toggleClass("active")
     })
 
+    $(".btn-contact__close").on("click", function () {
+        $(".btn-contact__close").addClass("hidden")
+        $(".contact__btn-wrapper").addClass("hidden")
+    })
+
     gsap.registerPlugin(ScrollTrigger);
 
     ScrollTrigger.matchMedia({
@@ -88,8 +93,8 @@ $(function(){
                      start: "top center"
                 }
             });
-            tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .3}, "-=1")
-            tl4.from(".advantages__item-2", { x: 20,  opacity: 0,  duration: .3})
+            tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .05}, "-=1")
+            tl4.from(".advantages__item-2", { x: 20,  opacity: 0,  duration: .05})
 
 
             let tl5 = gsap.timeline({
@@ -98,8 +103,9 @@ $(function(){
                     start: "top center"
                 }
             });
-            tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .3}, "-=1")
-            tl5.from(".advantages__item-4", { x: 20,  opacity: 0,  duration: .3})
+            tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .05}, "-=1")
+            tl5.from(".advantages__item-4", { x: 20,  opacity: 0,  duration: .05})
+
         }
 
     })
@@ -112,7 +118,7 @@ $(function(){
     let tl2  = gsap.timeline({
         scrollTrigger: {
             trigger: ".join",
-            start: "center bottom"
+            start: "center bottom",
         }
     })
 
