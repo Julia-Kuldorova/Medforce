@@ -52,6 +52,17 @@
   }
 }
 
+@media(max-width: 1200px) {
+  .comments__inner{
+    flex-direction: column-reverse;
+  }
+  .comments-headline {
+    text-align: center;
+    max-width: 360px;
+    width: 100%;
+  }
+}
+
 @media(max-width: 1000px) {
   .advantages__inner{
     flex-direction: column-reverse;
@@ -93,6 +104,10 @@
   }
   .games__box-row {
     margin: 0 -5px;
+  }
+  .advantages__info-box{
+    opacity: 1 !important;
+    transform: translate(0px, 0px) !important;
   }
 }
 
@@ -333,7 +348,70 @@
   .games__inner {
     padding: 100px 0 100px;
   }
-
+  .comments-slider {
+    max-width: 400px;
+    height: 400px;
+  }
+  .comments__item {
+    height: 400px;
+    padding: 78px 0 116px;
+  }
+  .comments__item-img-inner{
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 15px;
+  }
+  .comments__item-img-inner::before {
+    width: 50px;
+    height: 50px;
+  }
+  .comments__item-img {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #05c3de;
+  }
+  .comments__item-rating{
+    .rate-star{
+      margin: 0 auto 10px;
+    }
+  }
+  .comments__item-text {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 0 19px;
+    max-width: 320px;
+    margin: 0 auto 15px;
+  }
+  .comments__item-user a {
+    color: #fff;
+    background-color: #936cd8;
+    padding: 4px 10px;
+    font-size: 15px;
+  }
+  .comments-slider::before {
+    font-size: 50px;
+    top: 29%;
+    left: 9%;
+  }
+  .comments-slider::after {
+    font-size: 50px;
+  }
+  .comments-slider .slick-dots {
+    bottom: 82px;
+    right: 156px;
+  }
+  .comments-slider .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    transform: translate(-2px, -10px);
+  }
+  .comments-slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+  }
+  .comments-slider .slick-dots {
+    width: 90px;
+  }
 }
 
 @media(max-width: 600px) {
@@ -434,6 +512,33 @@
   .join__inner {
     padding: 100px 0 200px;
   }
+  .comments-slider {
+    max-width: 250px;
+    height: 250px;
+  }
+  .comments__item {
+    height: 250px;
+    padding: 10px 0 10px;
+  }
+  .comments__inner{
+    padding: 50px 0;
+  }
+  .comments:before {
+    min-height: 670px;
+  }
+  .comments-slider .slick-dots {
+    bottom: -31px;
+    right: 85px;
+  }
+  .comments__item-img-inner {
+    margin: 0 auto 10px;
+  }
+  .comments__item-user a {
+    font-size: 13px;
+  }
+  .games__inner{
+    padding: 100px 0 50px;
+  }
 }
 
 @media(max-width: 420px) {
@@ -442,6 +547,13 @@
       margin: 0 0 0 14px;
       max-width: 240px;
     }
+  }
+}
+
+@media(min-width: 571px) {
+  .advantages__item {
+    opacity: 1 !important;
+    transform: translate(0px, 0px) !important;
   }
 }
 

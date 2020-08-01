@@ -1407,7 +1407,7 @@
 
 .comments {
   position: relative;
-
+  overflow-x: hidden;
   &:before {
     content: ' ';
     position: absolute;

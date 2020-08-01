@@ -85,8 +85,7 @@ $(function(){
             let tl4 = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".advantages__items-row-top",
-                     start: "top center",
-                    markers: true
+                     start: "top center"
                 }
             });
             tl4.from(".advantages__item-1", { x: -20,  opacity: 0,  duration: .3}, "-=1")
@@ -96,8 +95,7 @@ $(function(){
             let tl5 = gsap.timeline({
                 scrollTrigger: {
                     trigger: ".advantages__items-row-right",
-                    start: "top center",
-                    markers: true
+                    start: "top center"
                 }
             });
             tl5.from(".advantages__item-3", { x: -20,  opacity: 0,  duration: .3}, "-=1")
