@@ -39,7 +39,7 @@ $(function(){
         prevArrow:
             '<button class="slick-arrow slick-prev" aria-label="Prev"><img src="../images/icons/arrow-prev.png" alt=""></button>',
         nextArrow:
-            '<button class="slick-arrow slick-next" aria-label="Next"><img src="../images/icons/arrow-next.png" alt=""></button>',
+            '<button class="slick-arrow slick-next" aria-label="Nпгext"><img src="../images/icons/arrow-next.png" alt=""></button>',
         dots: true
     });
 

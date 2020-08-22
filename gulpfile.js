@@ -79,4 +79,5 @@ gulp.task("watch", function () {
 gulp.task(
     "default",
     gulp.parallel("script", "style", "sass", "watch", "browser-sync")
-); //чтобы все сразу запускались 
+); //чтобы все сразу запускались
+

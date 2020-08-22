@@ -390,4 +390,42 @@ h1, h2, h3 {
 
 }
 
+.breadcrumbs{
+  text-align: center;
+  .breadcrumbs__inner{
+    padding: 150px 0;
+  }
+  .breadcrumbs__title{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  .breadcrumbs__list{
+    li{
+      display: inline-block;
+      a, span{
+        color: #d0dbff;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+    }
+    li + li{
+      position: relative;
+      padding-left: 22px;
+      &:before{
+        content: ' ';
+        width: 6px;
+        height: 12px;
+        background-image: url("../images/icons/right-arrow.png");
+        position: absolute;
+        left: 6px;
+        top: 10px;
+      }
+    }
+  }
+}
 
